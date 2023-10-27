@@ -21,7 +21,10 @@ class ViewController: UIViewController {
     }
 
     @objc func didTapButton(){
-        
+        // Creating hosting controller to show swiftUI view
+        let vc = UIHostingController(rootView: SettingsView())
+        // Presenting view
+        present(vc, animated: true)
     }
     
 }
